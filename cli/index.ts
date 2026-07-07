@@ -10,7 +10,7 @@ export async function main(argv: string[]): Promise<void> {
   program
     .name('sleepyhead-cli')
     .description('Guided TDE hardening for XAMPP-bundled MariaDB/MySQL installs')
-    .version('0.1.0');
+    .version('0.2.0');
 
   registerDetectCommand(program);
   registerHardenCommand(program);

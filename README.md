@@ -13,20 +13,17 @@ to get the code running and oriented.
 
 ## Status
 
-Milestone 1 (Scaffolding) is complete: the `Step` contract, `StepEngine`,
-and `WizardState` exist and are proven against fake steps (happy path,
-crash-and-resume, rollback, dry-run). Real detection, profiles, and
-hardening steps land in later milestones — see `docs/ARCHITECTURE.md` for
-the live checklist.
+Milestone 1 (Scaffolding) and Milestone 2 (Detection) are complete: the `Step` contract, `StepEngine`,
+and `WizardState` exist and are proven. The environment detector now reliably locates XAMPP/MariaDB installations via registry and active process lookups, accurately identifying bare processes vs. services. Real profiles and hardening steps land in later milestones — see `docs/ARCHITECTURE.md` for the live checklist.
 
-Every CLI subcommand below currently exists as a stub that prints which
-milestone will implement it, except where noted.
+Most CLI subcommands below currently exist as stubs that print which
+milestone will implement them, except for the completed milestones.
 
 ## Requirements
 
 - Node.js LTS (>=18)
 - Windows, for the target hardening workflow itself (XAMPP/MariaDB service
-  control). The engine and its tests run fine cross-platform.
+  control). The engine and its tests run fine cross-platform, but detection relies on PowerShell (standard on Windows 10/11).
 
 ## Setup
 
