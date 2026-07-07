@@ -10,6 +10,6 @@ export function registerHardenCommand(program: Command): void {
     .option('--resume', 'resume from the last verified step in an interrupted run', false)
     .action(async (_opts) => {
       // Wired to real steps/adapters/profiles in Milestone 3.
-      console.log('sleepyhead-cli harden: not yet implemented (Milestone 3)');
+      console.log('sleepyhead harden: not yet implemented (Milestone 3)');
     });
 }

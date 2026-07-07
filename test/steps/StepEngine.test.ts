@@ -49,7 +49,7 @@ describe('StepEngine resume + rollback plumbing', () => {
     expect(state.getStepRecord('c')?.status).toBe('pending');
 
     // Simulate a crash + restart: reload WizardState fresh from disk, exactly
-    // as `sleepyhead-cli harden --resume` would.
+    // as `sleepyhead harden --resume` would.
     const reloadedState = await WizardState.loadExisting(TEST_STATE_DIR);
     expect(reloadedState).not.toBeNull();
     const reloadedEngine = new StepEngine(steps, reloadedState!, {

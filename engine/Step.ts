@@ -35,6 +35,6 @@ export interface Step {
   execute(ctx: StepContext): Promise<StepResult>;
   /** Confirms the mutation actually took effect (e.g. plugin ACTIVE, not just "command didn't error"). */
   verify(ctx: StepContext): Promise<StepResult>;
-  /** Reverts this step's effects. Called by `sleepyhead-cli rollback`. */
+  /** Reverts this step's effects. Called by `sleepyhead rollback`. */
   rollback(ctx: StepContext): Promise<StepResult>;
 }

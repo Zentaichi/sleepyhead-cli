@@ -24,7 +24,7 @@ const STATE_FILENAME = 'wizard-state.json';
 
 /**
  * Persisted, resumable state for a single hardening run. This is what lets
- * `sleepyhead-cli harden --resume` pick up from the last verified step after
+ * `sleepyhead harden --resume` pick up from the last verified step after
  * a crash or a reboot triggered by a service restart, instead of restarting
  * the whole flow (and re-running steps that already mutated state).
  */

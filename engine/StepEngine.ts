@@ -84,7 +84,7 @@ export class StepEngine {
     return verification;
   }
 
-  /** Used by `sleepyhead-cli rollback` to revert a single step. */
+  /** Used by `sleepyhead rollback` to revert a single step. */
   async rollbackStep(id: string): Promise<StepResult> {
     const step = this.findStep(id);
     const ctx = this.buildContext();

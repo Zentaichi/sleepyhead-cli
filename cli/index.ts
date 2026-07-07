@@ -8,7 +8,7 @@ import { registerMigrateCommand } from './commands/migrate.js';
 export async function main(argv: string[]): Promise<void> {
   const program = new Command();
   program
-    .name('sleepyhead-cli')
+    .name('sleepyhead')
     .description('Guided TDE hardening for XAMPP-bundled MariaDB/MySQL installs')
     .version('0.2.0');
 

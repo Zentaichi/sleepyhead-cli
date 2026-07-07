@@ -6,6 +6,6 @@ export function registerRollbackCommand(program: Command): void {
     .description('Revert to the last known-good backup and config state')
     .action(async () => {
       // Wired in Milestone 5 alongside util/backup.ts.
-      console.log('sleepyhead-cli rollback: not yet implemented (Milestone 5)');
+      console.log('sleepyhead rollback: not yet implemented (Milestone 5)');
     });
 }

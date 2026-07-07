@@ -43,12 +43,12 @@ npm test               # vitest run — engine + step unit tests
 ## CLI usage (current stubs)
 
 ```bash
-sleepyhead-cli detect                     # Milestone 2
-sleepyhead-cli harden --profile <name>    # Milestone 3
+sleepyhead detect                     # Milestone 2
+sleepyhead harden --profile <name>    # Milestone 3
              [--dry-run] [--yes] [--resume]
-sleepyhead-cli verify                     # Milestone 4
-sleepyhead-cli rollback                   # Milestone 5
-sleepyhead-cli migrate-tables             # Milestone 3/4
+sleepyhead verify                     # Milestone 4
+sleepyhead rollback                   # Milestone 5
+sleepyhead migrate-tables             # Milestone 3/4
 ```
 
 Run `npm run dev -- --help` for the live command list.
