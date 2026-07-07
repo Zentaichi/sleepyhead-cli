@@ -1,0 +1,34 @@
+{
+  "name": "sleepyhead-cli",
+  "version": "0.1.0",
+  "description": "Guided CLI for hardening XAMPP-bundled MariaDB/MySQL installs with Transparent Data Encryption (TDE)",
+  "type": "module",
+  "bin": {
+    "sleepyhead-cli": "./dist/bin/sleepyhead-cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx bin/sleepyhead-cli.ts",
+    "lint": "eslint . --ext .ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "chalk": "^5.3.0",
+    "ora": "^8.1.0",
+    "pino": "^9.4.0",
+    "pino-pretty": "^11.2.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "tsx": "^4.16.2",
+    "vitest": "^2.0.5",
+    "@types/node": "^20.14.15",
+    "eslint": "^8.57.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

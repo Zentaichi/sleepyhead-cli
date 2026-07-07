@@ -1,0 +1,11 @@
+import type { Command } from 'commander';
+
+export function registerMigrateCommand(program: Command): void {
+  program
+    .command('migrate-tables')
+    .description('Run step 7 (ALTER TABLE ... ENCRYPTION) with row/table count progress reporting')
+    .action(async () => {
+      // Wired in Milestone 3/4 alongside the real step 7 implementation.
+      console.log('sleepyhead-cli migrate-tables: not yet implemented (Milestone 3/4)');
+    });
+}
