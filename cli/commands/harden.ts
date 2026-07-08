@@ -1,4 +1,5 @@
 import type { Command } from 'commander';
+import { comingSoon } from '../ui/messages.js';
 
 export function registerHardenCommand(program: Command): void {
   program
@@ -8,8 +9,8 @@ export function registerHardenCommand(program: Command): void {
     .option('--dry-run', 'show every command/diff that would run, without executing', false)
     .option('--yes', 'skip confirmations (requires a prior successful --dry-run this session)', false)
     .option('--resume', 'resume from the last verified step in an interrupted run', false)
-    .action(async (_opts) => {
+    .action(async () => {
       // Wired to real steps/adapters/profiles in Milestone 3.
-      console.log('sleepyhead harden: not yet implemented (Milestone 3)');
+      comingSoon('sleepyhead harden', 'Milestone 3');
     });
 }

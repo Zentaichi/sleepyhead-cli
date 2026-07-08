@@ -1,4 +1,5 @@
 import type { Command } from 'commander';
+import { comingSoon } from '../ui/messages.js';
 
 export function registerRollbackCommand(program: Command): void {
   program
@@ -6,6 +7,6 @@ export function registerRollbackCommand(program: Command): void {
     .description('Revert to the last known-good backup and config state')
     .action(async () => {
       // Wired in Milestone 5 alongside util/backup.ts.
-      console.log('sleepyhead rollback: not yet implemented (Milestone 5)');
+      comingSoon('sleepyhead rollback', 'Milestone 5');
     });
 }
