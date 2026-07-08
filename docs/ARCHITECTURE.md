@@ -27,3 +27,10 @@
 - [ ] Milestone 4 — Live execution + verification
 - [ ] Milestone 5 — Rollback + backups
 - [ ] Milestone 6 — Second profile
+
+## Future Architectural Notes
+- Treat EnvironmentDetector as a standalone subsystem.
+- Split StepEngine into execution/verification/rollback pipelines if complexity increases.
+- Introduce execution lock service.
+- Add Architecture Decision Records (ADRs).
+- Add CI/CD, fault-injection, integration, and VM testing strategy.

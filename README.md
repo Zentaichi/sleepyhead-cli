@@ -91,3 +91,12 @@ short:
 Copy `.env.example` to `.env` and adjust as needed. It holds non-secret
 config only (log level, backup/log/state directory paths) — never put
 OpenSSL passphrases, key material, or DB credentials in `.env`.
+
+## Planned Commands
+- `sleepyhead doctor` — health diagnostics.
+- `sleepyhead report` — export Markdown/HTML/JSON/PDF audit reports.
+- `sleepyhead self-test` — verify prerequisites before changes.
+
+## UX Goals
+- Show risk level, rollback availability, files changed, elapsed time, and final summary.
+- Prefer automatic profile selection with manual override only when needed.
